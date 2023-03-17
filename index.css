@@ -1,16 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
+@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
+
+:root{
+    --header_height:80px;
+    --hinomaru_size:320px;
+}
+
 body {
     margin: 0;
 }  
 header{
-    background:red;
+    background:rgba(255, 246, 220, 0.9);
     width: 100%;
-    height: 100px;
+    height: var(--header_height);
     margin: 0;
+    position: fixed;
+    top: 0;
+    display: flex;
+    z-index: 30;
 }
 main{
-    background:blue;
-    width: 100%;
-    height: 100px;
+    z-index: 20;
 }
 footer{
     background:purple;
@@ -19,4 +29,79 @@ footer{
 }
 h1{
     margin: 0;
+}
+#Logo{
+    margin:5px;
+}
+#headerbox{
+    background:rgba(255, 246, 220,1);
+    width: 100%;
+    height: var(--header_height);
+}
+.mintyou{
+    font-family: 'Noto Serif JP', sans-serif;
+}
+.title_logo{
+    font-size:20px;
+    position:relative;
+    left:40px;
+    margin-top:10px;
+}
+#header_uls{
+    display: flex;
+}
+.header_ul{
+    position:relative;
+    top:10px;
+    left:500px;
+    font-size:25px;
+    margin:20px;
+}
+.sawarabi{
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+#udon1{
+    position:absolute;
+    z-index: 21;
+}
+#contents{
+    width: 100%;
+    height: 1200px;
+    background:rgba(255, 246, 220,1);
+}
+#main_copy1{
+    z-index: 23;
+    position: absolute;
+    top:200px;
+    font-size: 100px;
+}
+#main_copy2{
+    z-index: 23;
+    position: absolute;
+    top:450px;
+    font-size: 100px;
+}
+#main_copy_box{
+    display: flex;
+    justify-content: center;
+}
+#hinomaru{
+    width:var(--hinomaru_size);
+    height:var(--hinomaru_size);
+    border-radius:50%;
+    background-color:red;
+    position:absolute;
+    z-index: 22;
+    top:360px;
+}
+.main_text{
+    font-size:25px;
+    margin:20px;
+    text-align: center;
+}
+#main_text_box{
+    position:absolute;
+    z-index: 22;
+    top:700px;
+    width:100%;
 }
