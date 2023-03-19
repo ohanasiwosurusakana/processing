@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1">
-    <title>さかなさかなさかな</title>
+    <title>石川高専うどん同好会公式ホームページ</title>
     <link rel="stylesheet" type="text/css" href="index.css" />
+    <script src="index.js"></script>
 </head>
+
 <body>
     <header>
         <img src="Logo.png" id="Logo">
@@ -34,16 +37,115 @@
     <main>
         <div id="headerbox"></div>
         <div id="contents">
-            <div id="main_copy_box">
-                <h1 id="main_copy1" class="mintyou">うどんで目指せ</h1>
-                <div id="hinomaru"></div>
-                <h1 id="main_copy2" class="mintyou">日本一</h1>
+            <div id="main_copy">
+                <div id="main_copy_box">
+                    <h1 id="main_copy1" class="mintyou">うどんで目指せ</h1>
+                    <div id="hinomaru">
+                        <h1 id="main_copy2" class="mintyou">日本一</h1>
+                    </div>
+                </div>
+                <img src="udon1.jpg" id="udon1">
+                <div id="main_text_box">
+                    <h1 class="main_text mintyou">石川高専うどん同好会は、</h1>
+                    <h1 class="main_text mintyou">石川の恵まれた水、豊かな海産物を武器に、</h1>
+                    <h1 class="main_text mintyou">日本一を目指し日々努力しています。</h1>
+                </div>
             </div>
-            <img src="udon1.jpg" id="udon1">
-            <div id="main_text_box">
-                <h1 class="main_text mintyou">石川高専うどん同好会は、</h1>
-                <h1 class="main_text mintyou">石川の恵まれた水、海産物を武器に、</h1>
-                <h1 class="main_text mintyou">日本一を目指し日々努力しています。</h1>
+            <div id="news_box">
+                <div id="news_text_copy_box">
+                    <h1 id="news_text_copy" class="mintyou">最新のお知らせ</h1>
+                    <div class="bottom_line" id="news_text_copy_line"></div>
+                </div>
+                <div id="news_new_boxs">
+                    <div class="news_new_box">
+                        <img src="news3.jpg">
+                        <h1 class="news_new_title sawarabi">新一年生への同好会紹介(3/18)</h1>
+                        <a class="news_new_text mintyou">今年も新一年生が入ってくる時期となりました。今年からは、本サイトでも...</a>
+                    </div>
+                    <div class="news_new_box">
+                        <img src="sakuraudon.png">
+                        <h1 class="news_new_title sawarabi">5年生卒業式(3/17)</h1>
+                        <a class="news_new_text mintyou">5年生の皆様、卒業おめでとうございます!うどん同好会の5年生は全員卒業...</a>
+                    </div>
+                    <div class="news_new_box">
+                        <img src="news2.jpg">
+                        <h1 class="news_new_title sawarabi">3月イベント予定一覧(3/1)</h1>
+                        <a class="news_new_text mintyou">3月のイベントカレンダーです。3月は春休みということもあって行事は少ない...</a>
+                    </div>
+                </div>
+                <div id="news_link">
+                    <h1 id="news_link_text" class="mintyou">これまでのお知らせ</h1>
+                </div>
+            </div>
+            <div id="about_box">
+                <div id="about_box_title_box">
+                    <h1 id="about_box_title" class="mintyou">活動・実績</h1>
+                    <div class="bottom_line" id="about_title_line"></div>
+                </div>
+                <div id="introduction_box">
+                    <div id="introduction_text_box">
+                        <div class="introduction_little_text_box">
+                            <div class="introduction_little_text_box_inside">
+                                <h1 class="mintyou introduction_texts">部員情報</h1>
+                                <div id="member_box">
+                                    <div class="member_little_box">
+                                        <div class="man_img"><img src="man.png"></div>
+                                        <div class="man_img"><img src="man.png"></div>
+                                        <div class="man_img"><img src="man.png"></div>
+                                        <div class="man_img"><img src="man.png"></div>
+                                        <div class="man_img"><img src="man.png"></div>
+                                        <div class="man_img"><img src="man.png"></div>
+                                    </div>
+                                    <div class="member_little_box">
+                                        <div class="man_img"><img src="man.png"></div>
+                                        <div class="man_img"><img src="man.png"></div>
+                                        <div class="man_img"><img src="woman.png"></div>
+                                        <div class="man_img"><img src="woman.png"></div>
+                                        <div class="man_img"><img src="woman.png"></div>
+                                        <div class="man_img"><img src="woman.png"></div>
+                                    </div>
+                                    <div class="member_little_box">
+                                        <div class="man_img"><img src="woman.png"></div>
+                                        <div class="man_img"><img src="woman.png"></div>
+                                        <div class="man_img"><img src="woman.png"></div>
+                                        <div class="man_img"><img src="woman.png"></div>
+                                        <div class="man_img"><img src="woman.png"></div>
+                                        <div class="man_img"><img src="woman.png"></div>
+                                    </div>
+                                </div>
+                                <div id="member_text_box">
+                                    <h1 id="member_text" class="mintyou">男子8人、女子10人</h1>
+                                </div>
+                            </div>
+                            <div class="introduction_little_text_box_inside">
+                                <h1 class="mintyou introduction_texts">活動目的</h1>
+                                <div id="objective_box">
+                                    <div id="objective_texts">
+                                        <h1 id="objective_text1" class="mintyou">美味しいうどんを作り、食べる</h1>
+                                        <h1 id="objective_text2" class="mintyou">素うどんから、アレンジまで</h1>
+                                    </div>
+                                    <div id="objective_img_box">
+                                        <img src="udon2.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="introduction_little_text_box">
+                            <div class="introduction_little_text_box_inside">
+                                <h1 class="mintyou introduction_texts">活動日</h1>
+                                <div id="day_img1">
+                                    <img src="eigyoubi.jpg">
+                                </div>
+                                <div id="day_texts">
+                                    <h1 id="day_text1" class="mintyou">毎週月曜日に活動</h1>
+                                </div>
+                            </div>
+                            <div class="introduction_little_text_box_inside">
+                                <h1 class="mintyou introduction_texts">活動場所</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
